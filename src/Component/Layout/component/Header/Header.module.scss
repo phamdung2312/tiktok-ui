@@ -16,77 +16,48 @@
 .logo {
 }
 
-.search-box {
-    width: 500px;
-}
-.search-header {
-    padding: 10px 12px;
-    font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
-}
-.search {
-    width: 500px;
-    height: 46px;
-    background-color: rgba(22, 24, 35, 0.06);
-    align-self: center;
+.logo-link {
     display: flex;
-    align-items: center;
-    border-radius: 92px;
-    font-size: 1.8rem;
-    position: relative;
-
-    input {
-        flex: 1;
-        background: transparent;
-        padding-left: 20px;
-        font-size: 1.6rem;
-        height: 100%;
-    }
-
-    &:hover {
-        outline: 1px solid rgba(22, 24, 35, 0.2);
-    }
-    &:hover > .btn-search {
-        background-color: rgba(22, 24, 35, 0.03);
-        color: black;
-    }
-    // input:not(:placeholder-shown) ~ .btn-search {
-    //     background-color: black;
-    // }
 }
 
-.clear,
-.loading {
-    right: 68px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #a7a7a7;
-}
-
-.btn-search {
-    height: 100%;
-    width: 52px;
-    font-size: 2rem;
-    background-color: transparent;
-    color: #a7a7a7;
-    border-top-right-radius: 92px;
-    border-bottom-right-radius: 92px;
-    &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        cursor: pointer;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        width: 1px;
-        right: 52px;
-        height: 28px;
-        top: 9px;
-        background-color: rgba(22, 24, 35, 0.12);
-    }
-}
-
+//Action
 .action {
     display: flex;
+    align-items: center;
+}
+.btnMenu-more {
+    background-color: transparent;
+    margin-left: 16px;
+    font-size: 1.8rem;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(22, 24, 35, 1);
+    padding: 8px;
+    cursor: pointer;
+}
+
+// Menu
+// Action
+
+.btn-mess {
+    font-size: 2rem;
+}
+
+.btn-notification {
+    font-size: 2rem;
+}
+
+.user-Login {
+    line-height: 0;
+}
+
+.user-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.action-item {
+    background-color: transparent;
+    margin-left: 24px;
+    line-height: 0;
 }

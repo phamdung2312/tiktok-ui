@@ -4,12 +4,13 @@ import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import OnlyHeader from '~/Component/Layout/OnlyHeader';
 import Search from '~/pages/Search';
+import routerConfig from '~/config/router';
 const publicRoutes = [
-    { path: '/', component: Home },
-    { path: '/following', component: Following },
-    { path: '/profile', component: Profile },
-    { path: '/upload', component: Upload, layout: OnlyHeader },
-    { path: '/search', component: Search, layout: null },
+    { path: routerConfig.home, component: Home },
+    { path: routerConfig.following, component: Following },
+    { path: routerConfig.profile, component: Profile },
+    { path: routerConfig.upload, component: Upload, layout: OnlyHeader },
+    { path: routerConfig.search, component: Search, layout: null },
 ];
 const privateRoutes = [{}];
 

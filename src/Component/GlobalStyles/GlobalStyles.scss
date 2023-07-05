@@ -1,7 +1,7 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root {
     --primary: #e9304e;
+    --font-family: 'TikTokFont', sans-serif;
 }
 
 button,
@@ -19,7 +19,7 @@ html {
     margin: 0;
 }
 body {
-    font-family: 'IBM Plex Sans', SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizespeed; // tối ưu hóa tốc độ hiển thị phông, hiển thị nhanh nhất
@@ -27,4 +27,41 @@ body {
 a[href] {
     // color: #333;
     text-decoration: none;
+}
+
+// Fonts
+
+@font-face {
+    font-family: 'TikTokFont';
+    src: url('/assets/Fonts/TikTokFont-Bold.woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'TikTokFont';
+    src: url('/assets/Fonts/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'TikTokFont';
+    src: url('/assets/Fonts/TikTokFont-Semibold.woff2');
+    font-weight: 600;
+}
+// tippy
+
+body {
+    .tippy-box {
+        background-color: rgba(84, 84, 84, 0.92);
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .tippy-content {
+        padding: 9px 9px;
+        z-index: 1;
+    }
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+        border-bottom-color: rgba(84, 84, 84, 0.92);
+    }
 }

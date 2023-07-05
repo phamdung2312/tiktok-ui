@@ -1,0 +1,45 @@
+.Menu-container {
+    width: 223px;
+    .Menu-icon_item {
+        padding: 6px 0;
+        .Menu-item {
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: rgb(22, 24, 35);
+            margin-left: 0;
+            width: 100%;
+            border-radius: 0;
+            padding: 9px 12px;
+            display: flex;
+            justify-content: flex-start;
+
+            &:hover {
+                background: rgba(22, 24, 35, 0.03);
+            }
+        }
+    }
+}
+
+//Header
+.Container-header {
+    position: relative;
+    height: 50px;
+    color: rgb(22, 24, 35);
+    margin-top: -6px;
+    cursor: pointer;
+}
+.btn-header {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.Title-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 1.6rem;
+}

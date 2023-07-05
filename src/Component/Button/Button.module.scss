@@ -1,16 +1,16 @@
 .wrapper {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.6rem;
     min-width: 100px;
     padding: 7px 15px;
     border-radius: 4px;
     line-height: 22px;
+    font-family: var(--font-family);
     cursor: pointer;
     background-color: white;
     border: 1px solid transparent;
     display: flex;
     justify-content: center;
-    color: white;
     + .wrapper {
         margin-left: 16px;
     }
@@ -26,6 +26,7 @@
 }
 
 .primary {
+    color: white;
     background-color: rgb(254, 44, 85);
 
     &:hover {
@@ -40,6 +41,7 @@
     }
 }
 .text {
+    padding: 6px 12px;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(22, 24, 35, 0.12);
     border-radius: 2px;
@@ -61,8 +63,9 @@
     padding: 12px 14px;
 }
 .icon {
-    height: 20px;
-    width: 20px;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
 }
 .title {
 }

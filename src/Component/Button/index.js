@@ -16,12 +16,14 @@ function Button({
     disabled = false,
     leftIcon = false,
     rightIcon = false,
+    className,
     onClick,
     children,
     ...passProp
 }) {
     let Comp = 'button';
     const classes = cx('wrapper', {
+        [className]: className,
         primary,
         outline,
         small,
